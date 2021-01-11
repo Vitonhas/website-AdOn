@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="stylesheet" href="./public/css/staff.css">
+    <link rel="stylesheet" href="./public/css/lightbox.css">
+    <link rel="stylesheet" href="./public/css/animation.css">
+    <link rel="stylesheet" href="./public/css/section-map.css">
+    <link rel="stylesheet" href="./public/css/scroll.css">
+    <link rel="stylesheet" href="./public/css/modal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="./public/img/favicon.ico">
+   
+    <title>Ad On</title>
+</head>
+
+<body class="page-wrapper" onkeydown="getKeyCodeArt(event); getKeyCodeVideo(event)">
+<div id="blurry">
+    
+        <!--Header-->
+        <header id="menu">
+
+            <img class="logo" src="./public/img/logo.png" alt="logo">
+
+            <div class="dropdown">
+              
+              <div class="menu-sign" onclick="dropdown()">
+               <i class="fa fa-bars"></i>
+              </div>
+
+              <nav class="menu-dropdown">
+                <ul class="menu">
+                    <li><a href="#home" onclick="dropdown()">HOME</a></li>
+                    <li><a href="#sobre" onclick="dropdown()">SOBRE</a></li>
+                    <li><a href="#portifolio" onclick="dropdown()">PORTIFOLIO</a></li>
+                    <li><a href="#contato" onclick="dropdown()">CONTATO</a></li>
+                </ul>
+              </nav>
+          </div>
+
+          <nav class="menu-align">
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#sobre">SOBRE</a></li>
+                <li><a href="#portifolio">PORTIFOLIO</a></li>
+                <li><a href="#contato">CONTATO</a></li>
+            </ul>
+          </nav>
+        </header>
+
+    <main>
+
+        <!--Introduction-->
+        <div id="home" class="presentation">
+       
+            <section class="introduction">
+                <div class="intro-text">
+                    <h1>Ad On Marketing Digital
+                        <i class="fa fa-rocket"></i>
+                    </h1> 
+                    <p>Ajudamos as empresas a se tornarem conhecidas sem necessidade de gastarem rios de dinheiro, levando seu negócio para o futuro!</p>
+                </div>
+
+                <div class="button">
+                   <a href="#contato"><button class="press-button" >Fale conosco</button></a>
+                </div>
+
+                <div class="circle"></div>
+
+            </section>
+
+            
+        </div>
+
+        <!--About-->
+        <div id="sobre"></div>
+        <section class="container">
+
+            <div class="cto-container">
+
+                <h1>O que criamos ?</h1>
+
+                <div class="cards">
+
+                    <div class="card">
+                        <img src="./public/svg/Designer.svg" alt="">
+                        <h3>Criação de <h2>Artes</h2></h3>
+                        <p>Desde a criação de logomarca, até o desing para anúncios, banners e flyers...</p>
+
+                    </div>
+
+                    <div class="card">
+                        <img src="./public/svg/videographer.svg" alt="">
+                        <h3>Edição de <h2>Vídeos</h2></h3>
+                        <p>Edição de vídeos profissionais, além da criação de animações e letras para vídeos musicais.</p>
+
+                    </div>
+
+                    <div class="card">
+                        <img src="./public/svg/data.svg" alt="">
+                        <h3>Controle de <h2>Marketing</h2></h3>
+                        <p>Gerenciamento de campanhas voltadas para expansão de marcas e conversões. Gerenciamento de mídias sociais. 
+                            Otimização de conversão, onde garantimos a melhor experiência do cliente sobre o seu produto. SEO, 
+                            tornar a sua marca a primeira em resultados de pesquisa.</p>
+                    </div>
+            
+            </div>
+                 
+        </section>
+
+        <!--Portifolio-->
+        <div id="portifolio"></div>
+        <section class="ct-container">
+
+            <h1>Portifolio</h1>
+              
+            <div class="art">
+
+              <h1>Artes</h1>
+
+              <div class="cards">
+                <div class="pic">
+                  <img src="./public/img/art_1.png"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(1)">
+                    <h2>Imagem 1</h2>
+                  </div>
+                </div>
+
+                <div class="pic">
+                  <img src="./public/img/art_2.png"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(2)">
+                    <h2>Imagem 2</h2>
+                  </div>
+                </div>
+
+                <div class="pic">
+                  <img src="./public/img/art_3.png"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(3)">
+                    <h2>Imagem 3</h2>
+                  </div>
+                </div>
+
+                <div class="pic">
+                  <img src="./public/img/art_4.png"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(4)">
+                    <h2>Imagem 3</h2>
+                  </div>
+                </div>
+
+                <div class="pic">
+                  <img src="./public/img/art_5.png"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(5)">
+                    <h2>Imagem 2</h2>
+                  </div>
+                </div>
+
+                <div class="pic">
+                  <img src="./public/img/art_6.jpg"/>
+                  <div class="overlay" onclick="openModalArt(); currentSlideArt(6)">
+                    <h2>Imagem 1</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="video">
+
+              <h1>Vídeos</h1>
+
+              <div class="cards">
+                
+                <div class="frame">
+                  <img src="./public/img/video_1.jpg"/>
+                  <div class="overlay" onclick="openModalVideo(); currentSlideVideo(1)">
+                    <h2>Clique para ver!</h2>
+                  </div>
+                </div>
+
+
+                <div class="frame">
+                  <img src="./public/img/video_2.jpg"/>
+                  <div class="overlay" onclick="openModalVideo(); currentSlideVideo(2)">
+                    <h2>Clique para ver!</h2>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+                 
+        </section>
+
+        <!--Staff-->
+        <section class="container">
+
+            <div class="ct-container">
+
+                <h1>Conheça Nossa <span style="color:var(--primary-color);">Equipe</span></h1>
+
+                <div class="row">
+                    <div class="col">
+                      <div class="full team_blog_colum">
+                        <div class="it_team_img"> <img class="img-responsive" src="./public/img/teste_1.jpg" alt="#"> </div>
+                        <div class="team_feature_head">
+                          <h4>João Guilherme</h4>
+                        </div>
+                        <div class="team_feature_social">
+                          <div class="social_icon">
+                            <ul class="list-inline">
+                              <li><a class="fa fa-facebook" href="https://www.facebook.com/joogui01" title="Facebook" target="_blank"></a></li>
+                              <li><a class="fa fa-instagram" href="https://www.instagram.com/joguiilherme" title="Instagram" target="_blank"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="full team_blog_colum">
+                        <div class="it_team_img"> <img class="img-responsive" src="./public/img/teste_2.jpg" alt="#"> </div>
+                        <div class="team_feature_head">
+                          <h4>Victor Pessanha</h4>
+                        </div>
+                        <div class="team_feature_social">
+                          <div class="social_icon">
+                            <ul class="list-inline">
+                              <li><a class="fa fa-facebook" href="https://www.facebook.com/victor.pessanha.58" title="Facebook" target="_blank"></a></li>
+                              <li><a class="fa fa-instagram" href="https://www.instagram.com/vitonhas" title="Instagram" target="_blank"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="full team_blog_colum">
+                        <div class="it_team_img"> <img class="img-responsive" src="./public/img/teste_3.jpg" alt="#"> </div>
+                        <div class="team_feature_head">
+                          <h4>Felipe Melo</h4>
+                        </div>
+                        <div class="team_feature_social">
+                          <div class="social_icon">
+                            <ul class="list-inline">
+                              <li><a class="fa fa-facebook" href="https://www.facebook.com/felipe.melomoura" title="Facebook" target="_blank"></a></li>
+                              <li><a class="fa fa-instagram" href="https://www.instagram.com/leef.js" title="Instagram" target="_blank"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="full team_blog_colum">
+                        <div class="it_team_img"> <img class="img-responsive" src="./public/img/teste_2.jpg" alt="#"> </div>
+                        <div class="team_feature_head">
+                          <h4>Laysa Maria</h4>
+                        </div>
+                        <div class="team_feature_social">
+                          <div class="social_icon">
+                            <ul class="list-inline">
+                              <li><a class="fa fa-facebook" href="https://www.facebook.com/laysamaria.dasilvarodrigues.9" title="Facebook" target="_blank"></a></li>
+                              <li><a class="fa fa-instagram" href="https://www.instagram.com/_laysamaria" title="Instagram" target="_blank"></a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                        <div class="full team_blog_colum">
+                          <div class="it_team_img"> 
+                            <img class="img-responsive" src="./public/img/teste_1.jpg" alt="#"> 
+                          </div>
+                          <div class="team_feature_head">
+                            <h4>Alessandro Zanata</h4>
+                          </div>
+                          <div class="team_feature_social">
+                            <div class="social_icon">
+                              <ul class="list-inline">
+                                <li><a class="fa fa-facebook" href="https://www.facebook.com/alessandro.zanata.10" title="Facebook" target="_blank"></a></li>
+                                <li><a class="fa fa-instagram" href="https://www.instagram.com/alessandrozanata/" title="Instagram" target="_blank"></a></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+            
+            </div>
+                 
+        </section>
+        
+        <!--Contact-->
+        <div id="contato"></div>
+        <section>
+            <div class="section-adress show-on-scroll">
+                <div class="adress">
+                    <h1>Contato</h1>
+
+                    <h3>Endereço <i class="fa fa-map"></i></h3>
+                    <a class="contact-link" target="_blank" href="https://www.google.com.br/maps/place/Av.+Marcelino+P%C3%ADres,+2858+-+7+-+Jardim+Climax,+Dourados+-+MS,+79801-004/@-22.2269222,-54.8032665,17z/data=!3m1!4b1!4m5!3m4!1s0x9489a831370f9757:0x885b06656bc7b4ed!8m2!3d-22.2269272!4d-54.8010778">
+                        Av. Marcelino Píres, 2858 - Jardim Climax, Dourados - MS
+                    </a>
+                    <h3>E-mail <i class="fa fa-at"></i></h3>
+                    <a class="contact-link" target="_blank" href="mailto:ad.on.dds@gmail.com">ad.on.dds@gmail.com</a>
+                    <h3>WhatsApp <i class="fa fa-whatsapp"></i></h3>
+                    <a class="contact-link" target="_blank" href="https://bit.ly/2YYiLJw">(67) 99803-2080</a>
+                    
+                </div>
+
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d923.3366535624532!2d-54.80155437079226!3d-22.22692395763378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9489a831376fc99f%3A0xeb8469febf755a0b!2sAv.%20Marcelino%20P%C3%ADres%2C%202874%20-%20Jardim%20Climax%2C%20Dourados%20-%20MS%2C%2079801-004!5e0!3m2!1spt-BR!2sbr!4v1599331276491!5m2!1spt-BR!2sbr" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+   
+
+    <!--Footer-->
+    <footer class="footer-area">
+    
+       <a href="#home" ><img class="logo" src="./public/img/logo.png" alt="logo"></a>
+        <div class="sociais">
+                
+            <a target="_blank" href="https://www.instagram.com/adon.marketing/"> <div class="icons"><i class="fa fa-instagram"></i></div></a>
+
+            <a target="_blank" href="https://web.facebook.com/adon.marketingdigital"> <div class="icons"><i class="fa fa-facebook"></i></div></a>
+        </div>
+        <p>Todos os direitos reservados. 2020 © <a style="color: #50b4f2;" >ADON</a> |  Marketing Digital em Dourados - MS <i class="fa fa-heart"></i></p>
+    </footer>
+</div>
+
+<!--My Modal Art-->
+
+<div id="myModalArt" class="modal">
+    <span class="close cursor" onclick="closeModalArt()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlidesArt">
+            <div class="numbertext">1 / 6</div>
+            <img src="./public/img/art_1.png" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">2 / 6</div>
+            <img src="./public/img/art_2.png" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">3 / 6</div>
+            <img src="./public/img/art_3.png" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">4 / 6</div>
+            <img src="./public/img/art_4.png" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">5 / 6</div>
+            <img src="./public/img/art_5.png" style="width:100%">
+          </div>
+
+          <div class="mySlidesArt">
+            <div class="numbertext">6 / 6</div>
+            <img src="./public/img/art_6.jpg" style="width:100%">
+          </div>
+
+        <a class="prev" onclick="plusSlidesArt(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlidesArt(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        
+    </div>
+
+    <div class="close-box" onclick="closeModalArt()"></div>
+</div>
+
+<!-- My Modal Video -->
+
+<div id="myModalVideo" class="modal">
+    <span class="close cursor" onclick="closeModalVideo(); stopVideo()">&times;</span>
+    <div class="modal-content">
+
+        <div class="mySlidesVideo videoplayer">
+            <div class="numbertext">1 / 2</div>
+            <iframe id="fvideo" type="text/html" width="100%" height="404"
+            src="http://www.youtube.com/embed/XX8jMVpzdEM?version=3&controls=0&loop=1&color=white&iv_load_policy=3"
+            frameborder="0"></iframe>
+          </div>
+
+          <div class="mySlidesVideo">
+            <div class="numbertext">2 / 2</div>
+            <iframe id="svideo" type="text/html" width="100%" height="404"
+            src="http://www.youtube.com/embed/ees73WsPkGY?version=3&controls=0&loop=1&color=white&iv_load_policy=3"
+            frameborder="0"></iframe>
+          </div>
+
+        <a class="prev" onclick="stopVideo(); plusSlidesVideo(-1)">&#10094;</a>
+        <a class="next" onclick="stopVideo(); plusSlidesVideo(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+        
+    </div>
+
+    <div class="close-box" onclick="closeModalVideo(); stopVideo()"></div>
+</div>
+
+
+
+</body>
+
+
+<script src="./public/js/scroll.js"></script>
+<script src="./public/js/show-on-scroll.js"></script>
+<script src="./public/js/ligthbox.js"></script>
+<script src="./public/js/lightboxVideo.js"></script>
+<script src="./public/js/dropdown.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+
+</html>
